@@ -1,0 +1,278 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+:root
+{
+    --main-color:#0078FF;
+    --second-color:#CDE1F8;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+
+body 
+{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+nav{
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.hover-nav{
+width: 0px;
+height: 2px;
+}
+.nav-item:hover .hover-nav{
+    width: 80%;
+    transition: all 0.5s ease-in;
+    background-color: white;
+}
+header{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header-layer{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header h1{
+    font-size: 72px;
+    font-weight: 600;
+}
+header h2{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+header h2:after{
+    content: "";
+    animation-name: skills ;
+    animation-duration:15s ;
+    animation-iteration-count: infinite;
+}
+@keyframes skills {
+    1%{content:"|"}
+    2%{content:"D|"}
+    3%{content:"De|"}
+    4%{content:"Des|"}
+    5%{content:"Desi|"}
+    6%{content:"Desig|"}
+    7%{content:"Design|"}
+    8%{content:"Designe|"}
+    9%{content:"Designer|"}
+    10%{content:"Designer"}
+    11%{content:"Designer|"}
+    12%{content:"Designer"}
+    13%{content:"Designer|"}
+    14%{content:"Designer"}
+    15%{content:"Designer|"}
+    16%{content:"Designe|"}
+    17%{content:"Design|"}
+    18%{content:"Desig|"}
+    19%{content:"Desi|"}
+    20%{content:"Des|"}
+    21%{content:"De|"}
+    22%{content:"D|"}
+    23%{content:"De|"}
+    24%{content:"Dev|"}
+    25%{content:"Deve|"}
+    26%{content:"Devel|"}
+    27%{content:"Develo|"}
+    28%{content:"Develop|"}
+    29%{content:"Develope|"}
+    30%{content:"Developer|"}
+    31%{content:"Developer"}
+    32%{content:"Developer|"}
+    33%{content:"Developer"}
+    34%{content:"Developer|"}
+    35%{content:"Developer"}
+    36%{content:"Developer|"}
+    37%{content:"Develope|"}
+    38%{content:"Develop|"}
+    39%{content:"Develo|"}
+    40%{content:"Devel|"}
+    41%{content:"Deve|"}
+    42%{content:"Dev|"}
+    43%{content:"De|"}
+    44%{content:"D|"}
+    45%{content:"|"}
+    46%{content:"F|"}
+    47%{content:"Fr|"}
+    48%{content:"Fre|"}
+    49%{content:"Free|"}
+    50%{content:"Freel|"}
+    51%{content:"Freela|"}
+    52%{content:"Freelan|"}
+    53%{content:"Freelanc|"}
+    54%{content:"Freelance|"}
+    55%{content:"Freelancer|"}
+    56%{content:"Freelancer"}
+    57%{content:"Freelancer|"}
+    58%{content:"Freelancer"}
+    59%{content:"Freelancer|"}
+    60%{content:"Freelancer"}
+    61%{content:"Freelancer|"}
+    62%{content:"Freelance|"}
+    63%{content:"Freelanc|"}
+    64%{content:"Freelan|"}
+    65%{content:"Freela|"}
+    66%{content:"Freel|"}
+    67%{content:"Free|"}
+    68%{content:"Fre|"}
+    69%{content:"Fr|"}
+    70%{content:"F|"}
+    71%{content:"P|"}
+    72%{content:"Ph|"}
+    73%{content:"Phoh|"}
+    74%{content:"Phot|"}
+    75%{content:"Photo|"}
+    76%{content:"Photog|"}
+    77%{content:"Photogr|"}
+    78%{content:"Photogra|"}
+    79%{content:"Photograp|"}
+    80%{content:"Photograph|"}
+    81%{content:"Photographe|"}
+    82%{content:"Photographer|"}
+    83%{content:"Photographer"}
+    84%{content:"Photographer|"}
+    85%{content:"Photographer"}
+    86%{content:"Photographer|"}
+    87%{content:"Photographer"}
+    88%{content:"Photographer|"}
+    89%{content:"Photographe|"}
+    90%{content:"Photograph|"}
+    91%{content:"Photograp|"}
+    92%{content:"Photogra|"}
+    93%{content:"Photogr|"}
+    94%{content:"Photog|"}
+    95%{content:"Photo|"}
+    96%{content:"Phot|"}
+    97%{content:"Pho|"}
+    98%{content:"Ph|"}
+    99%{content:"P|"}
+    100%{content:"|"}
+}
+#about h6::after{
+    content: '';
+    width: 100%;
+    background-color: var(--second-color);
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#about h6::before{
+    content: '';
+    width: 85%;
+    background-color: var(--main-color);
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+#about h5::before{
+    content: '';
+    width:100px;
+    background-color: var(--main-color);
+    height: 3px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+.line-h3{
+    width: 40px;
+    height: 5px;
+    background-color:var(--main-color);
+}
+.icon-main{
+    width: 120px;
+    height: 120px;
+    border: var(--main-color) 10px  solid;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+.hover-icon:hover .icon-main{
+    background-color: var(--main-color);
+    border: var(--second-color) 10px solid;
+    color: white;
+}
+.icon-second{
+    width: 100px;
+    height: 100px;
+    border: var(--second-color) 10px  solid;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+.icon-third{
+    width: 40px;
+    height: 40px;
+    border: var(--main-color) 3px  solid;
+    border-radius: 50%;
+}
+#work{
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.layer{
+    background-color: rgba(0, 120, 255,0.8);
+    padding-top:70px ;
+    padding-bottom: 70px;
+}
+.hover-img img{
+    transition: all 1s;
+}
+.hover-img:hover img{
+    transform: scale(1.3,1.3);
+}
+.testimonial{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-footer img{
+    width: 10%;
+}
+
+#contact .line-h3{
+    width: 100px;
+    height: 3px;
+    background-color:var(--main-color);
+}
+.list-icon{
+    list-style-type: none;
+}
+.hover-icon:hover .icon-third{
+    background-color: var(--main-color);
+    border: var(--second-color) 3px solid;
+    color: white;
+}
+.hover-icon:hover .button-submit{
+    background-color: var(--main-color);opacity: 0.9;
+    border: var(--second-color) 5px solid;
+    color: white;
+}
+.button-submit{
+    background-color: var(--main-color);
+    color: white;
+    border: white 5px solid;
+    transition: all 0.5;
+}
+footer{
+background-color: rgb(0, 120, 255);
+color: white;
+text-align: center;
+}
